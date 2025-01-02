@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #15374a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #236d9c;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Styling for Unit Conversion Sections */
+.firstUnit, .secondUnit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Horizontal Alignment for Unit 1 */
+.firstUnit {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Wrapper for Input and Selector Pair */
+.unitWrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Inputs Styling */
+input[type="text"] {
+    width: 90%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 2px solid #15374a;
+    background: #ffffff;
+    color: #236d9c;
+    font-size: 18px; /* Increased font size */
+}
+
+/* Dropdown Styling */
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 2px solid #15374a;
+    background: #ffffff;
+    color: #236d9c;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    text-align: center;
+    text-align-last: center; /* Ensures dropdown text is center aligned */
+}
+
+/* Labels Styling */
+label {
+    font-size: 20px; /* Make text bigger */
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+}
+
+/* Adjust Convert To Label */
+.secondUnit label {
+    margin-top: 5px; /* Slide the label down */
+    text-align: left;
+}
+
+/* Section Headers (Optional but Added for Clarity) */
+.firstUnit > label,
+.secondUnit > label {
+    font-size: 20px; /* Larger font for clarity */
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Output Section */
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Equal Sign Styling */
+.output p {
+    font-size: 24px; /* Bigger text for the equal sign */
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Output Text Styling */
+.output-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #15374a;
+    padding: 6px 12px;
+    border-radius: 5px;
+    min-width: 60px;
+    text-align: center;
+    background: #ffffff;
+}
+
+/* Go Button Styling */
+button.GoButton {
+    background: #236d9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.GoButton:hover {
+    background: #15374a;
+}
+
+/* Media Query for Responsiveness (Optional) */
+@media (max-width: 600px) {
+    input[type="text"], select {
+        width: 100%;
+    }
+
+    .unitWrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .firstUnit, .secondUnit {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .output {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

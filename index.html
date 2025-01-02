@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unit Converter | Harry</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="firstUnit">
+        <div class="unit1Input">
+            <label>
+                <input type="text" placeholder="Enter a value..." id="inputValue">
+            </label>
+        </div>
+
+        <div class="dropDown1">
+            <label for="Unit1"></label>
+            <select name="Unit1" id="Unit1">
+                <option value="Inches">Inches (in)</option>
+                <option value="Feet">Feet (ft)</option>
+                <option value="Meters">Meters (m)</option>
+                <option value="Millimeters">Millimeters (mm)</option>
+                <option value="Miles">Miles (mi)</option>
+                <option value="Kilometers">Kilometers (km)</option>
+                <option value="Centimeters">Centimeters (cm)</option>
+                <option value="Yards">Yards (yd)</option>
+                <option value="Miles">Miles (mi)</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="secondUnit">
+        <div class="dropDown2">
+            <label for="Unit2">Convert to:</label>
+            <select name="Unit2" id="Unit2">
+                <option value="Inches">Inches (in)</option>
+                <option value="Feet">Feet (ft)</option>
+                <option value="Meters">Meters (m)</option>
+                <option value="Millimeters">Millimeters (mm)</option>
+                <option value="Miles">Miles (mi)</option>
+                <option value="Kilometers">Kilometers (km)</option>
+                <option value="Centimeters">Centimeters (cm)</option>
+                <option value="Yards">Yards (yd)</option>
+                <option value="Miles">Miles (mi)</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="output">
+        <p>=</p>
+        <div class="output-text">
+            <span></span>
+        </div>
+        <button class="GoButton">Go</button>
+    </div>
+</div>
+<script src="src/index.js"></script>
+</body>
+
+</html>
